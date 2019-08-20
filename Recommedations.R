@@ -26,7 +26,7 @@ str(movies)
 distances = dist(movies[2:20], method = "euclidean")
 
 # Hierarchical clustering
-clusterMovies = hclust(distances, method = "ward") 
+clusterMovies = hclust(distances, method = "ward.D") 
 
 # Plot the dendrogram
 plot(clusterMovies)
